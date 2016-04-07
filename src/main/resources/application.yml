@@ -1,0 +1,49 @@
+
+#server configuration
+server:
+  port: 9000
+  address: localhost
+
+
+
+#datasource config - sql server
+#task.server.datasource:
+##    platform: sql server
+#    url: jdbc:sqlserver://10.8.1.112:1433;DatabaseName=Monitor;sendStringParametersAsUnicode=false
+#    username: dooiooadmin
+#    password: dooioo
+#    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+
+spring.thymeleaf:
+  cache: false # Enable template caching. 
+  check-template-location: true # Check that the templates location exists. 
+  content-type: text/html # Content-Type value. 
+  enabled: true # Enable MVC Thymeleaf view resolution. 
+  encoding: UTF-8 # Template encoding. 
+  mode: HTML5 # Template mode to be applied to templates. See also StandardTemplateModeHandlers. 
+  prefix: "classpath:/templates/" # Prefix that gets prepended to view names when building a URL. 
+  suffix: ".html"  # Suffix that gets appended to view names when building a URL.
+
+
+
+##datasource config - mysql
+task.server.datasource:
+#    platform: mysql
+    url: "jdbc:mysql://localhost:3306/testdb"
+    username: test
+    password: 1234
+    driverClassName: com.mysql.jdbc.Driver
+##    max-active: 20
+##    max-idle: 10
+##    min-idle: 2
+##    initial-size: 3
+##    initialize: false
+##    testWhileIdle: ture
+##    testOnBorrow: true
+##    removeAbandoned: true
+##    removeAbandonedTimeout: true
+##    validationQuery: "select 1"
+##    validationInterval: 120000
+
+
