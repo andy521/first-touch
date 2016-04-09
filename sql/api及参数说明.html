@@ -1,0 +1,36 @@
+<!--******************************************************-->
+<ID>001</ID>
+<api>/search/book</api>
+<desc>添加时搜索</desc>
+<request-attributes>
+{book:{
+    bookName:
+    bookLanguage:
+    bookVersion:
+    bookDepreciation:
+    bookPrice:
+}}
+
+</request-attributes>
+<respone>
+{result:yes/no}
+
+</respone>
+
+<!--******************************************************-->
+<ID>002</ID>
+<api>/book/add</api>
+<desc>添加书籍,返回yes添加成功</desc>
+<request-attributes>
+    {book:{
+        bookName:
+        bookLanguage:
+        bookVersion:
+        bookDepreciation:
+        bookPrice:
+    },file:文件流}
+
+</request-attributes>
+<respone>
+    {result:yes/no}
+</respone>
