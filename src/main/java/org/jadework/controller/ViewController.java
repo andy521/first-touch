@@ -17,7 +17,7 @@ public class ViewController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String showView(){
-        return "main";
+        return "addbook";
     }
 }
 

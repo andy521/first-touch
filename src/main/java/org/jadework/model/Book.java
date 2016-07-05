@@ -27,9 +27,7 @@ public class Book implements Serializable {
      */
     private Integer bookDepreciation;
     private Float bookPrice;
-    /**
-     * 库存
-     */
+    /** 库存 */
     private Integer bookStock;
     private String bookTags;
     private String bookImageUrl;

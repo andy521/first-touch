@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" ng-app="myTouch">
 <head>
-    <meta charset="UTF-8">
-    <title>添加书籍</title>
+    <meta charset="UTF-8"/>
+    <title>addBook</title>
 </head>
 <body>
+<div ng-include="'header.html'"></div>
 
+<div class="container" ng-controller="myTouchController">
+    {{firstName}}
+
+</div>
+
+<div ng-include="'footer.html
+'"></div>
+<script type="text/javascript"
+        th:src="@{/js/angular.js}"></script>
+<script type="text/javascript"
+        th:src="@{/js/controller.js}"></script>
 </body>
 </html>

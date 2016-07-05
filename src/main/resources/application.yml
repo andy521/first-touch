@@ -27,6 +27,8 @@ spring.thymeleaf:
 
 
 
+
+
 ##datasource config - mysql
 spring.server.datasource:
 #    platform: mysql
