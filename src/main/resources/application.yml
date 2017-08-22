@@ -25,6 +25,8 @@ spring.thymeleaf:
   prefix: "classpath:/templates/" # Prefix that gets prepended to view names when building a URL. 
   suffix: ".html"  # Suffix that gets appended to view names when building a URL.
 
+spring.mvc.static-path-pattern: /** #设置静态资源的请求路径
+spring.resources.static-locations: classpath:/static/,classpath:/vue-chat/dist/ #指定静态资源的路径
 
 
 ##datasource config - mysql

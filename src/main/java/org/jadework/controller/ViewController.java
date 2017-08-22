@@ -15,9 +15,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class ViewController {
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/main", method = RequestMethod.GET)
     public String showView(){
         return "main";
+    }
+
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public String showIndex(){
+        return "index";
     }
 }
 

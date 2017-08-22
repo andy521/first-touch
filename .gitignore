@@ -17,6 +17,10 @@ target/
 *.iml
 *.iws
 
+# npm
+node_modules/
+
+
 # temp ignore
 logs/
 *.log
