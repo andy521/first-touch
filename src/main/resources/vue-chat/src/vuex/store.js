@@ -5,20 +5,18 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
-        user: {}, //用户信息
-        scene:{}
-    },
-    getters: {
-        getUser: state => { //用户信息计算属性
-            return state.user;
-        }
+        userName: null, //用户信息
+        staffList:[],
+        allChatMsg:{"staff":{},"group":{}},
+        stomp:null
     },
     mutations: {
         init (state, data) {
-            state.user = data;
+            state.userName = data['name'];
+            state.staffList = data['staffList'];
         },
-        initScene (state, data) {
-            state.scene = data;
+        setStomp(state, stomp){
+            state.stomp = stomp;
         }
     }
 })

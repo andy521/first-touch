@@ -24,6 +24,11 @@ public class ViewController {
     public String showIndex(){
         return "index";
     }
+
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String showLogin(){
+        return "login";
+    }
 }
 
 

@@ -13,7 +13,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        /*http.authorizeRequests()
+        http.authorizeRequests()
                 //设置拦截规则
                 .antMatchers("/")
                 .permitAll()
@@ -25,12 +25,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //默认登录页面
                 .loginPage("/login")
                 //默认登录成功跳转页面
-                .defaultSuccessUrl("/chat")
+                .defaultSuccessUrl("/index")
                 .permitAll()
                 .and()
                 //设置注销
                 .logout()
-                .permitAll();*/
+                .permitAll();
     }
 
     @Override

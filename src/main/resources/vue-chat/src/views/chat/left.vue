@@ -1,7 +1,7 @@
 <template>
 
     <div id="left">
-        <span></span>
+        {{userName}}
     </div>
 
 </template>
@@ -12,7 +12,11 @@
         name: 'left',
         data() {
             return {
-                msg: 'Welcome to Your Vue.js App'
+            }
+        },
+        computed: { //通过计算属性 获取单例全局信息
+            userName: function () {
+                return this.$store.state.userName;
             }
         }
     }
